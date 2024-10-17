@@ -1,0 +1,29 @@
+body {
+    background-color: lightblue;
+}
+
+    h1 {
+    color: rebeccapurple;
+    text-align: center;
+    }
+    h1.especial{
+        color: red;
+    }
+
+
+    p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    }
+    p>img{
+        border: 1px solid red;
+        height: 200;
+        width: 200px;
+    }
+    p::first-letter{
+        font-size: 3cm;
+    }
+    table, th, td {
+        border:1px solid black;    
+    }
+
