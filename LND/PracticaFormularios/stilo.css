@@ -1,17 +1,9 @@
     h1 {
-    text-align: center;
-    }
-    h1.especial{
-        color: red;
+        text-align: center;
     }
     p {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    }
-    p>img{
-        border: 1px solid red;
-        height: 200;
-        width: 200px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
     }
     legend{
         border: 1px solid black;
@@ -25,4 +17,7 @@
     }
     .yellow{
         background-color: bisque;
+    }
+    .rojo{
+        background-color: lightcoral;
     }

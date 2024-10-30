@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica Formularios</title>
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="./stilo.css">
 </head>
 <body>
     <h1> HOJA DE INSCRIPCIÓN<br> EN LOS CICLOS DE GRADO SUPERIOR </h1>
@@ -58,18 +58,21 @@
         </fieldset>
         <fieldset name="fieldset2" class="yellow">
             <legend>Forma de Acceso</legend>
-            <ul style="list-style-type: none;">
-                <li>Direct</li>
-                <ul style="list-style-type: disc;">
-                    <li>Bachillerato LOGSE.<label for="modalidad"> Modalidad</label></li>
-                    <li>Bachillerato Experimental</li>
-                    <li>COU. <label for="opcion">Opción</label></li>
-                    <li>FP2</li>
-                    <li>Otros <label for="especifique">(especifique)</label></li>
+            <ul>
+                <li><input type="radio"> Direct</li>
+                <ul>
+                    <li><input type="radio">Bachillerato LOGSE.<label for="modalidad"> Modalidad </label><input type="text" name="modalidad"></li>
+                    <li><input type="radio">Bachillerato Experimental</li>
+                    <li><input type="radio">COU. <label for="opcion">Opción </label><input type="text" name="opcion"></li>
+                    <li><input type="radio">FP2</li>
+                    <li><input type="radio">Otros <label for="especifique">(especifique) </label><input type="text" name="especifique"></li>
                 </ul>
-                <li>Prueba Libre</li>
+                <li><input type="radio">Prueba Libre</li>
             </ul>
-                    
+        </fieldset>
+        <fieldset class="rojo">
+            <legend>Documentos Adjuntos</legend>
+            
         </fieldset>
 </body>
 </html>
