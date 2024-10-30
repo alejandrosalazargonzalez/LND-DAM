@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1> HOJA DE INSCRIPCIÓN<br> EN LOS CICLOS DE GRADO SUPERIOR </h1>
-    <fieldset name="fieldset1">
+    <fieldset name="fieldset1" class="grey">
         <legend>Datos Personales</legend>
         <table class="tablaFormulario">
             <tr> 
@@ -21,10 +21,55 @@
                 <td><input type="text" name="Apellidos"></td>
                 <td><input type="text" name="DNI"></td>
             </tr>
-            
-            
-            
+            <tr>
+                <td><label for="Localidad">Localidad Nacimiento:</label></td>
+                <td><label for="Provincia">Provincia:</label></td>
+                <td><label for="Fecha">Fecha Nacimiento:</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="Localidad Nacimiento"></td>
+                <td><select name="Provincia" >
+                    <option>-seleccionar-</option>
+                    <option>Álva</option>
+                    <option>Albacete</option>
+                    <option>Alicante</option>
+                    <option>Almería</option>
+                    <option>Asturias</option>
+                    <option>Ávila</option>
+                    <option>Badajoz</option>
+                    <option>Islas Baleares</option>
+                    <option>Barcelona</option>
+                    <option>Cáceres</option>
+                    <option>Cantabria</option>
+                    <option>Castellón</option>
+                </select>
+                </td>
+                <td><input type="date" name="Fecha"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="Direccion">Direccion:</label></td>
+                <td><label for="Código">Código Postal:</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" name="Direccion" size="40"></td>
+                <td><input type="text" name="Código"></td>
+            </tr>
         </table>
+        </fieldset>
+        <fieldset name="fieldset2" class="yellow">
+            <legend>Forma de Acceso</legend>
+            <ul style="list-style-type: none;">
+                <li>Direct</li>
+                <ul style="list-style-type: disc;">
+                    <li>Bachillerato LOGSE.<label for="modalidad"> Modalidad</label></li>
+                    <li>Bachillerato Experimental</li>
+                    <li>COU. <label for="opcion">Opción</label></li>
+                    <li>FP2</li>
+                    <li>Otros <label for="especifique">(especifique)</label></li>
+                </ul>
+                <li>Prueba Libre</li>
+            </ul>
+                    
         </fieldset>
 </body>
 </html>
