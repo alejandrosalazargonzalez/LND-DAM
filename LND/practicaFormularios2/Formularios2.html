@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stilo.css">
+
+    <title>Ejercicio de Formularios 2</title>
+</head>
+<body>
+    <h1>Informacion sobre el producto</h1>
+    <fieldset>
+        <legend>Datos básicos</legend>
+        <label for="nombre"><b>Nombre</b></label>
+        <br>
+        <input type="text" name="nombre">
+        <br>
+        <br>
+        <label for="descripcion"><b>Descripción</b></label>
+        <br>
+        <textarea name="descripcion" id="" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <label for="foto"><b>Foto </b></label>
+        <input type="file" name="foto" id="">
+        <br>
+        <input type="checkbox" name="contador">
+        <label for="checkbox"><b>Añadir contador de visitas</b></label>
+    </fieldset>
+    <fieldset>
+        <legend>Datos Económicos</legend>
+        <label for="precio"><b>Precio</b></label>
+        <input type="number" name=" precio">
+        <label for="precio">€&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label for="impuestos">Impuestos</label>
+        <select name="impuestos">
+            <option>4%</option>
+            <option>7%</option>
+            <option>16%</option>
+            <option>25%</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <label for="promocion"><b>Promoción</b></label>
+        <dl>
+            <dd><input type="radio" name="promocion"><b>Ninguno</b></dd>
+            <dd><input type="radio" name="promocion"><b>Transporte gratuito</b></dd>
+            <dd><input type="radio" name="promocion"><b>Descuento 5%</b></dd>
+        </dl>
+    </fieldset>
+</body>
+</html>
