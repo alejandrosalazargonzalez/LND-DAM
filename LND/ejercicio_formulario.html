@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <h3>Alejandro Salazar González</h3>
-</head>
-<body>
+    </head>
+    <body>
     <fieldset>
         <legend>Datos del propietario</legend>
         <label for="nombre">Nombre:</label>
@@ -26,10 +26,22 @@
         <input type="text" name="matricula">
         <br>
         <label for="caracteristicas">Caracteristicas:</label>
-        <select name="caracteristicas" >
-            <optgroup></optgroup>
+        <select name="caracteristicas" multiple>
+            <option value="1" selected>Utilitario</option>
+            <option value="2"> Todo Terreno</option>
+            <option value="3" selected>Alta gama</option>
         </select>
         <br>
+        <label for="datos">Otros datos:</label>
+        <br>
+        <input type="checkbox" name="servofrenos" checked>
+        <label for="servofrenos">Servofrenos</label>
+        <input type="checkbox" name="elevalunas" checked>
+        <label for="elevalunas">Elevalunas</label>
+        <input type="checkbox" name="remolque">
+        <label for="remolque">Remolque</label>
     </fieldset>
-</body>
-</html>
+    <button type="button">enviar</button>
+    </body>
+    </html>
+
