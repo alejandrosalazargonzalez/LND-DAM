@@ -1,19 +1,23 @@
 table{
-    border: 1px solid darkblue;
+    border: 1px solid midnightblue;
 }
 .cabecera{
-    background-color: darkblue;
+    background-color: midnightblue;
     color: white;
     font-size: 16px;
     font-weight: bold;
+    text-align: left;
 }
 .cuerpo{
     background-color: gray;
-    color:darkblue ;
+    color:midnightblue ;
     font-size: 12px;
     text-justify: auto;
 }
 
 .pie{
-
+    background-color: midnightblue;
+    color: white;
+    font-size: 10px;
+    text-align: right;
 }
