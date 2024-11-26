@@ -1,13 +1,19 @@
 table{
-    border: 1px solid blue;
+    border: 1px solid darkblue;
 }
-header{
-    background-color: blue;
+.cabecera{
+    background-color: darkblue;
     color: white;
     font-size: 16px;
     font-weight: bold;
 }
-body{
+.cuerpo{
     background-color: gray;
-    color: ;
+    color:darkblue ;
+    font-size: 12px;
+    text-justify: auto;
+}
+
+.pie{
+
 }
