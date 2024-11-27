@@ -1,26 +1,26 @@
 table{
-    border: 1px solid midnightblue;
+    border: 1px solid rgb(180, 125, 206);
     display: inline-block;
     width: 45%;
     vertical-align: middle;
 }
 .cabecera{
-    background-color: midnightblue;
+    background-color: rgb(180, 125, 206);
     color: white;
     font-size: 16px;
     font-weight: bold;
     text-align: left;
 }
 .cuerpo{
-    background-color: gray;
-    color:midnightblue ;
+    background-color: white;
+    color:black ;
     font-size: 12px;
     text-justify: auto;
     width: 45%;
 }
 
 .pie{
-    background-color: midnightblue;
+    background-color: rgb(180, 125, 206);
     color: white;
     font-size: 10px;
     text-align: right;
