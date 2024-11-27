@@ -1,0 +1,52 @@
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: center;
+    background-color: #FFFFCC;
+    border: 1px solid black;
+    border-style: dotted;
+    padding:3%;
+}
+
+h3{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+    background: #FFCC99;
+    border: 1px solid #FF9900;
+    font-size: 15px;
+}
+
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: green;
+    font-size: 17px;
+    font-weight: normal;
+    padding: 2%;
+}
+
+h4{
+    background-color:grey;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+li{
+    color: #336699;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+p{
+    color: #CC3300;
+    background: #A9F5F2;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-indent: 30px;
+}
+
+b{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    border: 1px solid black;
+}
