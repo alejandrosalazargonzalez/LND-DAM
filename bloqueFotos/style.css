@@ -29,7 +29,9 @@ nav a{
 aside{
     padding: 20px;
     background-color: beige;
-    
+    float: right;
+    width: 25%;
+    order: 2;
 }
 section{
     flex:70%;
