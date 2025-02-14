@@ -1,3 +1,8 @@
+/**
+ * @ @author: alejandrosalazargonzalez
+ * @ @version: 1.0.0
+ */
+
 //Ejercicio 2
 
 //1.- En nuestro archivo HTML vamos a vincular el fichero script.js

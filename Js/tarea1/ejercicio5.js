@@ -1,3 +1,8 @@
+/**
+ * @ @author: alejandrosalazargonzalez
+ * @ @version: 1.0.0
+ */
+
 // Ejercicio 5
 
 //   1.- Declara una variable que se llame texto, y asígnale el método prompt() para que le puedas solicitar al usuario que ingrese un texto
