@@ -1,3 +1,8 @@
+/**
+ * @ @author: alejandrosalazargonzalez
+ * @ @version: 1.0.0
+ */
+
 //Ejercicio 3
 
 //1.- Crea tres variables, numero1, numero2 y resultado

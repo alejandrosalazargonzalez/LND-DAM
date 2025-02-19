@@ -1,3 +1,8 @@
+/**
+ * @ @author: alejandrosalazargonzalez
+ * @ @version: 1.0.0
+ */
+
 //Ejercicio1:
 
 //1.- Declara una variable llamada nombre en tu consola y asígnale tu nombre

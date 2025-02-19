@@ -1,3 +1,8 @@
+/**
+ * @ @author: alejandrosalazargonzalez
+ * @ @version: 1.0.0
+ */
+
 //Ejercicio 2
 // 1.- Utiliza la  consola para escribir una expresión que compare dos strings y produzca un valor true
 let palabra1 = "hola"
