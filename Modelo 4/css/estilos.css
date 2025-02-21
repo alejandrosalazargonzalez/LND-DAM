@@ -1,0 +1,18 @@
+table ,tr,td,th{
+    border:1px solid black;
+    height: 50%;
+    margin-left: 225px;
+}
+th{
+    color: red;
+}
+img{
+    width: 80px;
+    height: 80px;
+}
+.rojo{
+    color:red;
+}
+.gris{
+    color:grey
+}
