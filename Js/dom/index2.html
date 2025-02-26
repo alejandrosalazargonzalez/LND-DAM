@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleEJ4.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Manipulación del DOM</h1>
+
+        <h2>Paso 1: Obtener un elemento</h2>
+
+        <ul>
+            <li>document.querySelector('selector'): <span class="estilo-letras">Es uno de los métodos para obtener un elemento. Devuelve sólo el primer elemento que coincida con el selector CSS dado</span></li>
+            <li>document.querySelectorAll('selector'): <span class="estilo-letras">Obtiene un grupo de elementos. Devuelve un array con todos los elementos que coincidan con el selector CSS dado</span></li></li>
+            <li>document.getElementById(''): <span class="estilo-letras">obtiene un solo elemento unicamente a través de su ID</span></li>
+        </ul>
+
+        <h2>Paso 2: Manipular el elemento una vez obtenido:</h2>
+
+        <ul>
+            <li>CSS: <span class="estilo-letras">elemento.style.propiedadCss</span></li>
+            <li>HTML: <span class="estilo-letras">elemento.textContent</span></li></li>
+            <li>HTML: <span class="estilo-letras">elemento.innerHTML</span></li>
+        </ul>
+
+        <h2>Manipulación de DOM a través de un evento - Intro:</h2>
+
+        <p id="primerParrafo">Tambien se puede manipular un elemento a través de un evento. Repasemos antes... Un evento es la interacción del usuario con nuestra página Web. Esta interacción activa una función.</p>
+
+        <p>Uno de los eventos más utilizados es el evento click. La estrucutra sintaxica para un evento es el siguiente</p>
+
+        <p><strong>elemento.addEventListener("evento",funcion a ejecutar)</strong></p>
+
+        <p>¿Si te gustó esta información? suscribete</p>
+        <input type="email" value="" placeholder="programadesdetucasa@gmail.com"><button>Enviar</button>
+    
+    <!-- JS -->
+    <script src="ejercicio4.js"></script>
+</body>
+</html>
