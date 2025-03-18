@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libreria>
+    <libros>
+        <libro>
+            <autor>Nico</autor>
+            <titulo>El arte de programar</titulo>
+            <editorial>elpcero</editorial>
+        </libro>
+        <libro>
+            <autor>Alex</autor>
+            <titulo>Los bucles dan miedo</titulo>
+            <editorial>programados</editorial>
+        </libro>
+        <libro>
+            <autor>Marcos</autor>
+            <titulo>Reporten al jungla</titulo>
+            <editorial>loleros</editorial>
+        </libro>
+    </libros>
+</libreria>
