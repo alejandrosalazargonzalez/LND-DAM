@@ -1,0 +1,27 @@
+PRACTICA 16.- Sea el siguiente DTD:
+<!ELEMENT XXX (AAA+)>
+<!ELEMENT AAA EMPTY>
+¿Es válido el siguiente documento?
+<XXX>
+<AAA /> <AAA />
+</XXX>
+
+no es valido
+
+PRACTICA 17.- Describe con tus palabras qué elementos se están definiendo y
+qué tipo de hijos pueden contener en las siguientes declaraciones de DTD:
+1.- <!ELEMENT LIBRO (Autor, Editorial)>
+2.- <!ELEMENT Autor (#PCDATA)>
+3.- <!ELEMENT PELICULA (Actor|Actriz|Director)+>
+4.- <!ELEMENT PELICULA ((Actor | Actriz)*, Director, Maquillaje?)>
+5.- <!ELEMENT PELICULA (#PCDATA | Actor)*>
+6.- <!ELEMENT PELICULA (Titulo, Genero, (Actor | Actriz | Narrador)*)>
+7.- <!ELEMENT FICHA (Nombre+, Apellido+, Direccion*, foto?,
+TelFijo*|TelMovil*)
+
+Se estan definiendo los elementos hijo Autor y editorial dentro de libro, 
+tambien se esta definiendo que PELICULA debe tener: actor o actriz o director;
+ o actor o actriz y director y maquillaje. FICHA debe tener nombre, apellido, 
+ direccion, foto t TelFijo o TelMovil
+
+ 
