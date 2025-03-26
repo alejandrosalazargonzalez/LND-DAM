@@ -24,4 +24,90 @@ tambien se esta definiendo que PELICULA debe tener: actor o actriz o director;
  o actor o actriz y director y maquillaje. FICHA debe tener nombre, apellido, 
  direccion, foto t TelFijo o TelMovil
 
- 
+ PRACTICA 18.- Realiza una DTD apropiada para representar el siguiente
+documento xml:
+<?xml version="1.0" encoding="utf-8" ?>
+<Agenda>
+<Persona>
+<Nombre> Eva </Nombre>
+<Apellido> Lopez </Apellido>
+<Email> evalopez@minik.org </Email>
+<Oficina> 2.1 B18 </Oficina>
+<Telefono> 5555555 </Telefono>
+<Movil> 5557777 </Movil>
+</Persona>
+</Agenda>
+
+PRACTICA 19.- Comenta con tus propias palabras qué se define en el siguiente
+extracto de una DTD:
+<!ATTLIST curso
+director CDATA #REQUIRED
+horario (mañana | tarde | noche) #IMPLIED
+matricula (ordinaria | extraordinaria) “Ordinaria”
+tasas CDATA #FIXED “53€”>
+
+Se estan declarando una serie de atributos, director, como atributo obligatorio;
+horario, con mañana, tarde y  noche, como opcional; matricula, con valor por 
+defecto “Ordinaria”; y tasas fijada en "53€"
+
+PRACTICA 20.- Comenta con tus propias palabras qué se define en el siguiente
+extracto de una DTD:
+<!ELEMENT pelicula(titulo, writer+, productor+, director+, actor*,
+comentarios?)>
+<!ATTLIST pelicula
+tipo (drama | comedy | adventure | sci-fi | mistery | horror | romance |
+documentary)
+"drama"
+clasificacion (G | PG | PG-13 | R | X) "PG"
+review (1 | 2 | 3 | 4 | 5) "3"
+año CDATA #IMPLIED
+>
+
+Se define el elemento pelicula que tiene;titulo: tiene que aparecer una vez;
+writer tiene que aparecer una vez; productor, debe aparecer al menos una vez; 
+director debe aparecer al menos una ve tambien; actor, puede no aparecer o 
+aparecer más de una vez; comentariospuede no aparecer o aparecer más de una vez.
+
+Tambien se definen los atributos de la pelicula que son: tipo, que tiene:
+drama o comedy o adventure o sci-fi o mistery o horror o romance o documentary.
+, pero el valor por defecto es drama; clasificacion, que puede ser:
+G o PG o PG-13 o R o X, pero el valor por defecto es PG; review: su valor es:
+1 o 2 o 3 o 4 o 5, pero por defecto es 3; año, su valor es una cadena 
+de caracteres y es opcional.
+
+PRACTICA 21.- Observando la siguiente DTD indica si es válido el código
+xml posterior:
+<!ELEMENT mietiqueta (#PCDATA)>
+<!ATTLIST mietiqueta
+AtribA CDATA #IMPLIED
+AtribB NMTOKEN #REQUIRED
+AtribC NMTOKENS #REQUIRED>
+Documento 1:
+<mietiqueta AtribB=”12.5”>Texto </mietiqueta>
+Documento 2:
+<mietiqueta AtribB=”12.5” AtribC=”3:16”>Texto </mietiqueta>
+Documento 3:
+<mietiqueta AtribA=”hola” AtribB=”12.5” AtribC=”3 6”>Texto </mietiqueta>
+Documento 4:
+<mietiqueta AtribA=”17:5” AtribB=”17,5” AtribC=”2 3”>Texto </mietiqueta>
+Documento 5:
+<mietiqueta AtribA=”aa” AtribB=”17 5” AtribC=”hola”>Texto </mietiqueta>
+
+Son válidos el uno, el dos y el tres.
+
+PRACTICA 22.- Crea mensajes.DTD. Guardará la gramática de un sistema de
+envío de mensajes. Cada mensaje está compuesto de un autor, uno o más
+destinatarios y un asunto. Todos contienen texto.
+
+Además crea una entidad general interna que se llame “yo” y guarde tu
+nombre y apellidos. Crea otra entidad general interna que se llame “curso” que
+guarde el texto “Primero de Administración de Sistemas Informáticos en Red”.
+A continuación crea un fichero practica21.xml que guarde algunos mensajes.
+Al final de cada asunto utiliza las entidades “yo” y “curso”.
+
+PRACTICA 23.- Sea la siguiente DTD:
+<!ENTITY % contacto “direccion, telefono”>
+<!ELEMENT alumno (nombre, %contacto;)>
+<!ELEMENT centro (denominacion, %contacto;)>
+1o.- Termina de definir la DTD.
+2o.- Crea un documento XML con dos alumnos y un centro.

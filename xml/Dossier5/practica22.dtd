@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mensajes [
+    <!ENTITY yo "Tu Nombre y Apellidos">
+    <!ENTITY curso "Primero de Administración de Sistemas Informáticos en Red">
+    <!ELEMENT mensajes (mensaje+)>
+    <!ELEMENT mensaje (autor, destinatarios, asunto, texto)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT destinatarios (destinatario+)>
+    <!ELEMENT destinatario (#PCDATA)>
+    <!ELEMENT asunto (#PCDATA)>
+    <!ELEMENT texto (#PCDATA)>
+]>
+
+<!DOCTYPE mensajes SYSTEM "mensaje.dtd">
+<mensajes>
+    <mensaje>
+        <autor>&yo;</autor>
+        <destinatarios>
+            <destinatario>Juan Pérez</destinatario>
+            <destinatario>María López</destinatario>
+        </destinatarios>
+        <asunto>Consulta sobre la clase &curso;</asunto>
+        <texto>Hola, tengo algunas dudas sobre la clase de hoy.</texto>
+    </mensaje>
+    <mensaje>
+        <autor>&yo;</autor>
+        <destinatarios>
+            <destinatario>Carmen Sánchez</destinatario>
+        </destinatarios>
+        <asunto>Recordatorio de la reunión &curso;</asunto>
+        <texto>Este es un recordatorio de la reunión programada para esta semana.</texto>
+    </mensaje>
+    <mensaje>
+        <autor>&yo;</autor>
+        <destinatarios>
+            <destinatario>Pedro González</destinatario>
+            <destinatario>Laura Martínez</destinatario>
+        </destinatarios>
+        <asunto>Entrega de trabajos &curso;</asunto>
+        <texto>Por favor, recuerden entregar sus trabajos antes del viernes.</texto>
+    </mensaje>
+</mensajes>

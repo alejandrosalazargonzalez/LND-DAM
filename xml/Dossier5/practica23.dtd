@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE escuela [
+    <!ENTITY % contacto "direccion, telefono">
+    
+    <!ELEMENT alumno (nombre, %contacto;)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>
+    
+    <!ELEMENT centro (denominacion, %contacto;)>
+    <!ELEMENT denominacion (#PCDATA)>
+]>
+<!DOCTYPE escuela SYSTEM "escuela.dtd">
+<escuela>
+    <alumno>
+        <nombre>Juan Pérez</nombre>
+        <direccion>Calle Falsa 123</direccion>
+        <telefono>123-456-789</telefono>
+    </alumno>
+    <alumno>
+        <nombre>María López</nombre>
+        <direccion>Avenida Siempre Viva 742</direccion>
+        <telefono>987-654-321</telefono>
+    </alumno>
+    <centro>
+        <denominacion>Escuela Primaria Ejemplo</denominacion>
+        <direccion>Avenida de la Educación 100</direccion>
+        <telefono>555-123-456</telefono>
+    </centro>
+</escuela>
