@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inmobiliaria [
+    <!ELEMENT inmobiliaria (casa+)>
+    <!ELEMENT casa (metros, direccion, propietarios?, precio?)>
+    <!ELEMENT metros (#PCDATA)>
+    <!ELEMENT direccion (texto, descripcion?)>
+    <!ELEMENT texto (#PCDATA)>
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT propietarios (propietario+)>
+    <!ELEMENT propietario (#PCDATA)>
+    <!ELEMENT precio (#PCDATA)>
+]>
+<inmobiliaria>
+    <casa>
+        <metros>150</metros>
+        <direccion>
+            <texto>Calle Falsa 123</texto>
+            <descripcion>Piso en la zona central de la ciudad.</descripcion>
+        </direccion>
+        <propietarios>
+            <propietario>Juan Pérez</propietario>
+            <propietario>Ana López</propietario>
+        </propietarios>
+        <precio>250000</precio>
+    </casa>
+
+    <casa>
+        <metros>200</metros>
+        <direccion>
+            <texto>Avenida Principal 456</texto>
+            <descripcion>Casa con jardín y piscina.</descripcion>
+        </direccion>
+        <precio>400000</precio>
+    </casa>
+</inmobiliaria>
