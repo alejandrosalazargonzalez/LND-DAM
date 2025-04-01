@@ -8,7 +8,7 @@ apellidos. por cada clase se establece que por defecto hay pizarra pudiendo no h
 2) Inmobiliaria. Debe disponer de almenos una casa. Por cada casa se conocen los metros y la
 dirección. Pueden aparecer propietarios y precio En la dirección texto y/o descripción
 
-3) Banco. Se guardan las cuentas y clientes de cada uno debe haber al mnos uno. De igual manera se guarda la informaciónque vincula cuenta_cliente, que esuna entidad vacía. De cliente se guarda nombre y apellidos y un id. De cuenta un id y el interés que tiene ( a modo de atributo) y el saldo. cuenta_cliente tiene un id y los atributos correspondientes para vincular los dos elementos.
+3) Banco. Se guardan las cuentas y clientes de cada uno debe haber al menos uno. De igual manera se guarda la información que vincula cuenta_cliente, que es una entidad vacía. De cliente se guarda nombre y apellidos y un id. De cuenta un id y el interés que tiene ( a modo de atributo) y el saldo. cuenta_cliente tiene un id y los atributos correspondientes para vincular los dos elementos.
 
 4) Realizar el dtd que represente lo siguiente:
 

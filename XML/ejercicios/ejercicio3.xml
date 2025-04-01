@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE banco [
-    <!ELEMENT banco (#PCDATA)>
+    <!ELEMENT banco (clientes, cuentas, cuenta_cliente*)>
+    <!ELEMENT clientes (cliente+)>
+    <!ELEMENT cliente (nombre, apellidos)>
+    <!ATTLIST cliente id ID #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+
+    <!ELEMENT cuentas (cuenta+)>
+    <!ELEMENT cuenta EMPTY>
+    <!ATTLIST cuenta id ID #REQUIRED>
+    <!ATTLIST cuenta interes CDATA #REQUIRED>
+    <!ATTLIST cuenta saldo CDATA #REQUIRED>
+
+    <!ELEMENT cuenta_cliente EMPTY>
+    <!ATTLIST cuenta_cliente id ID #REQUIRED>
+    <!ATTLIST cuenta_cliente cliente_id IDREF #REQUIRED>
+    <!ATTLIST cuenta_cliente cuenta_id IDREF #REQUIRED>
 ]>
 <banco>
+    <clientes>
+        <cliente id="Cliente1">
+            <nombre>Juan</nombre>
+            <apellidos>Pérez</apellidos>
+        </cliente>
+        <cliente id="Cliente2">
+            <nombre>María</nombre>
+            <apellidos>González</apellidos>
+        </cliente>
+    </clientes>
+    <cuentas>
+        <cuenta id="CuentaA1" interes="0.05" saldo="1500.00"/>
+        <cuenta id="CuentaA2" interes="0.03" saldo="2500.00"/>
+        <cuenta id="CuentaA3" interes="0.04" saldo="3000.00"/>
+    </cuentas>
+    <cuenta_cliente id="CC1" cliente_id="Cliente1" cuenta_id="CuentaA1"/>
+    <cuenta_cliente id="CC2" cliente_id="Cliente1" cuenta_id="CuentaA2"/>
+    <cuenta_cliente id="CC3" cliente_id="Cliente2" cuenta_id="CuentaA3"/>
 </banco>
