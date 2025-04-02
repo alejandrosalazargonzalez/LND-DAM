@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personas [
+    <!ELEMENT personas (persona+)>
+    <!ELEMENT persona (nombre, apellidos, nacimiento?, direcciones, (mujer | varon))>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT nacimiento EMPTY>
+    <!ATTLIST nacimiento dia CDATA #REQUIRED>
+    <!ATTLIST nacimiento mes CDATA #REQUIRED>
+    <!ATTLIST nacimiento año CDATA #REQUIRED>
+    <!ELEMENT direcciones (direccion+)>
+    <!ELEMENT direccion (calle, poblacion, provincia, codigopostal?)>
+    <!ELEMENT calle (#PCDATA)>
+    <!ELEMENT poblacion (#PCDATA)>
+    <!ELEMENT provincia (#PCDATA)>
+    <!ELEMENT codigopostal (#PCDATA)>
+    <!ELEMENT mujer EMPTY>
+    <!ELEMENT varon EMPTY>
+]>
+<personas>
+    <persona>
+        <nombre>Clara</nombre>
+        <apellidos>Hernández</apellidos>
+        <nacimiento dia="12" mes="05" año="1990"/>
+        <direcciones>
+            <direccion>
+                <calle>Avenida de la Paz</calle>
+                <poblacion>Madrid</poblacion>
+                <provincia>Madrid</provincia>
+                <codigopostal>28001</codigopostal>
+            </direccion>
+        </direcciones>
+        <mujer/>
+    </persona>
+</personas>

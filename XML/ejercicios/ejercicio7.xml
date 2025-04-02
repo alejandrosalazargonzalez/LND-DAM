@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catálogo [
+    <!ELEMENT catálogo (alumnos, profesores, cursos, vínculos)>
+    <!ELEMENT alumnos (alumno+)>
+    <!ELEMENT alumno (#PCDATA)>
+    <!ATTLIST alumno idAlumno ID #REQUIRED>
+    <!ELEMENT profesores (profesor+)>
+    <!ELEMENT profesor (#PCDATA)>
+    <!ATTLIST profesor idProfesor ID #REQUIRED>
+    <!ELEMENT cursos (curso+)>
+    <!ELEMENT curso (#PCDATA)>
+    <!ATTLIST curso idCurso ID #REQUIRED>
+    <!ELEMENT vínculos (alumno_curso* | profesor_curso*)>
+    <!ELEMENT alumno_curso EMPTY>
+    <!ATTLIST alumno_curso refAlumno IDREF #REQUIRED>
+    <!ATTLIST alumno_curso refCurso IDREF #REQUIRED>
+    <!ATTLIST alumno_curso año CDATA #REQUIRED>
+    <!ELEMENT profesor_curso EMPTY>
+    <!ATTLIST profesor_curso refProfesor IDREF #REQUIRED>
+    <!ATTLIST profesor_curso refCurso IDREF #REQUIRED>
+    <!ATTLIST profesor_curso año CDATA #REQUIRED>
+]>
+
+<catálogo>
+    <alumnos>
+        <alumno idAlumno="alu01">
+            <nombre>Luis</nombre>
+            <apellidos>Pérez</apellidos>
+        </alumno>
+        <alumno idAlumno="alu02">
+            <nombre>Marta</nombre>
+            <apellidos>Gómez</apellidos>
+        </alumno>
+        <alumno idAlumno="alu03">
+            <nombre>José</nombre>
+            <apellidos>Martínez</apellidos>
+        </alumno>
+        <alumno idAlumno="alu04">
+            <nombre>Sofía</nombre>
+            <apellidos>Cáceres</apellidos>
+        </alumno>
+    </alumnos>
+    
+    <profesores>
+        <profesor idProfesor="prof01">
+            <nombre>Juan Luís de Todos Los Santos</nombre>
+            <apellidos>Ramón</apellidos>
+        </profesor>
+        <profesor idProfesor="prof02">
+            <nombre>Carmen</nombre>
+            <apellidos>López</apellidos>
+        </profesor>
+        <profesor idProfesor="prof03">
+            <nombre>Ángel</nombre>
+            <apellidos>Suárez</apellidos>
+        </profesor>
+    </profesores>
+    
+    <cursos>
+        <curso idCurso="cur01">
+            <nombre>Desarrollo Web</nombre>
+        </curso>
+        <curso idCurso="cur02">
+            <nombre>Lenguaje de Marcas</nombre>
+        </curso>
+        <curso idCurso="cur03">
+            <nombre>Programación Orientada a Objetos</nombre>
+        </curso>
+        <curso idCurso="cur04">
+            <nombre>Sistemas de Información</nombre>
+        </curso>
+    </cursos>
+    
+    <vínculos>
+        <alumno_curso refAlumno="alu01" refCurso="cur01" año="2023"/>
+        <alumno_curso refAlumno="alu02" refCurso="cur02" año="2023"/>
+        <alumno_curso refAlumno="alu03" refCurso="cur03" año="2023"/>
+        <alumno_curso refAlumno="alu04" refCurso="cur04" año="2023"/>
+        
+        <profesor_curso refCurso="cur01" refProfesor="prof01" año="2023"/>
+        <profesor_curso refCurso="cur02" refProfesor="prof02" año="2023"/>
+        <profesor_curso refCurso="cur03" refProfesor="prof03" año="2023"/>
+        <profesor_curso refCurso="cur04" refProfesor="prof01" año="2023"/>
+    </vínculos>
+</catálogo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Concesionario [
+    <!ELEMENT Concesionario (Modelo+)>
+    <!ELEMENT Modelo (#PCDATA | Motor | Potencia | Consumo_medio | precio)*>
+    <!ATTLIST Modelo id ID #REQUIRED>
+    <!ATTLIST Modelo Modelos_relacionados CDATA #IMPLIED>
+    <!ELEMENT Motor (#PCDATA)>
+    <!ATTLIST Motor Modelos_relacionados CDATA #IMPLIED>
+    <!ELEMENT Potencia (#PCDATA)>
+    <!ELEMENT Consumo_medio (#PCDATA)>
+    <!ATTLIST Consumo_medio Velocidad_km CDATA #REQUIRED>
+    <!ELEMENT precio (#PCDATA)>
+]>
+<Concesionario>
+    <Modelo id="Modelo556">No disponible</Modelo>
+    <Modelo id="Modelo555" Modelos_relacionados="Modelo444 Modelo556">
+        Este modelo tiene un <Motor Modelos_relacionados="Modelo556">1.998cc 16v. de cuatro cilindros</Motor> 
+        que desarrolla una potencia de <Potencia>128</Potencia> CV. 
+        Dispone de cambio manual ... el consumo medio de este monovolumen es 
+        <Consumo_medio Velocidad_km="100">11</Consumo_medio> a los 100 km. 
+        El precio base es de 2.225.000.
+    </Modelo>
+    <Modelo id="Modelo557">No disponible</Modelo>
+    <Modelo id="Modelo154">No disponible</Modelo>
+    <Modelo id="Modelo444" Modelos_relacionados="Modelo555 Modelo154">
+        Este modelo tiene un <Motor Modelos_relacionados="Modelo556">2.000cc 16v. de cuatro cilindros</Motor> 
+        con <Potencia>128</Potencia> CV. 
+        Dispone de cambio manual ... el consumo medio de este monovolumen es 
+        <Consumo_medio Velocidad_km="100">11</Consumo_medio> a los 100 km. 
+        El precio base es de 2.500.000.
+    </Modelo>
+</Concesionario>

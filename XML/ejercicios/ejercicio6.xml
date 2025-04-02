@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE entrenamientos [
+    <!ELEMENT entrenamientos (cliente+)>
+    <!ELEMENT cliente (nombre, apellido1, apellido2?, sesiones)>
+    <!ATTLIST cliente id ID #REQUIRED>
+    
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellido1 (#PCDATA)>
+    <!ELEMENT apellido2 (#PCDATA)>
+    <!ELEMENT sesiones (sesion+)>
+    
+    <!ELEMENT sesion (localizacion, comentario)>
+    <!ATTLIST sesion duracion CDATA #REQUIRED>
+    <!ATTLIST sesion unidad (minutos | segundos | horas) "minutos">
+    <!ATTLIST sesion distancia CDATA #REQUIRED>
+    <!ATTLIST sesion pulsaciones CDATA #IMPLIED>
+    <!ATTLIST sesion id_cliente IDREF #REQUIRED>
+    
+    <!ELEMENT localizacion (#PCDATA)>
+    <!ELEMENT comentario (#PCDATA)>
+]>
+<entrenamientos>
+    <cliente id="c1">
+        <nombre>Pedro</nombre>
+        <apellido1>González</apellido1>
+        <apellido2>Smith</apellido2>
+        <sesiones>
+            <sesion duracion="45" unidad="minutos" distancia="5" pulsaciones="120" id_cliente="c1">
+                <localizacion>Parque Central</localizacion>
+                <comentario>Buena sesión</comentario>
+            </sesion>
+        </sesiones>
+    </cliente>
+</entrenamientos>
